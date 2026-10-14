@@ -1,0 +1,2 @@
+// Solution for: Payroll Salary Management
+public class W62_q2 {static class PayrollAccount{private double basicSalary,bonus;PayrollAccount(double s){basicSalary=s;}void setBonus(double b){if(b>=0)bonus=b;}double netSalary(){return basicSalary+bonus;}}public static void main(String[]z){PayrollAccount p=new PayrollAccount(50000);p.setBonus(5000);System.out.printf("Net salary: %.2f%n",p.netSalary());}}

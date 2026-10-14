@@ -1,0 +1,2 @@
+// Solution for: Course Credit Management
+public class W61_q3 {static class Course{String code,title;int credits,labCredits;Course(String c,String t,int cr){this(c,t,cr,0);}Course(String c,String t,int cr,int lab){code=c;title=t;credits=cr;labCredits=lab;}public String toString(){return code+" "+title+" credits="+credits+" labCredits="+labCredits;}}public static void main(String[]z){System.out.println(new Course("CSE101","Java",4));System.out.println(new Course("CSE102","DS Lab",3,1));}}

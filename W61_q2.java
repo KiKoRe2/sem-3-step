@@ -1,0 +1,2 @@
+// Solution for: Hostel Mess Wallet Management
+public class W61_q2 {static class MessWallet{private double balance;MessWallet(double b){balance=b;}void topUp(double x){if(x>0)balance+=x;}boolean spend(double x){if(x<=0||x>balance)return false;balance-=x;return true;}double getBalance(){return balance;}}public static void main(String[]z){MessWallet w=new MessWallet(500);w.topUp(200);w.spend(150);System.out.printf("Balance: %.2f%n",w.getBalance());}}

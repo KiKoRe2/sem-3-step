@@ -1,0 +1,2 @@
+// Solution for: Employee Profile Creation
+public class W62_q3 {static class Employee{int empId;String empName;double salary;boolean isIntern;Employee(int id,String n){this(id,n,0,true);}Employee(int id,String n,double s){this(id,n,s,false);}Employee(int id,String n,double s,boolean i){empId=id;empName=n;salary=s;isIntern=i;}public String toString(){return empId+" "+empName+" salary="+salary+" intern="+isIntern;}}public static void main(String[]z){System.out.println(new Employee(1,"Asha"));System.out.println(new Employee(2,"Ravi",45000));}}

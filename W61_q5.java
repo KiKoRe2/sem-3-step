@@ -1,0 +1,2 @@
+// Solution for: Student and College Information Management
+public class W61_q5 {static class Student{String name;int attendance;static final String COLLEGE="SRM Institute of Science and Technology";Student(String n,int a){name=n;attendance=a;}void print(){System.out.println(name+" "+attendance+" "+COLLEGE);}}public static void main(String[]z){new Student("Asha",90).print();new Student("Ravi",85).print();}}

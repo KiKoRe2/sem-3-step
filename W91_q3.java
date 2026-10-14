@@ -1,0 +1,2 @@
+// Solution for: Library Late Fine Counter
+import java.util.*; public class W91_q3 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase(),title=s.next();int days=s.nextInt();double fine=t.equals("BOOK")?2.0*days:t.equals("DVD")?Math.min(50,5.0*days):days;System.out.printf("%s: %.2f%n",title,fine);total+=fine;}System.out.printf("Total Fines: %.2f%n",total);}}

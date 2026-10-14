@@ -1,0 +1,2 @@
+// Solution for: Travel Booking with Common Fee
+import java.util.*; public class W91_q5 {static final double BOOKING_FEE=50;public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();double d=s.nextDouble(),fare=t.equals("BUS")?2*d:t.equals("TRAIN")?1.5*d:2500+4*d;fare+=BOOKING_FEE;System.out.printf("%s: %.2f%n",t,fare);total+=fare;}System.out.printf("Total: %.2f%n",total);}}

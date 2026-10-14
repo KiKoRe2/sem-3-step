@@ -1,0 +1,2 @@
+// Solution for: Movie Ticket Counter
+import java.util.*; public class W92_q1 {static final double FEE=20;public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();int count=s.nextInt();double price=t.equals("REGULAR")?150:t.equals("PREMIUM")?250:400;double v=(price+FEE)*count;System.out.printf("%s: %.2f%n",t,v);total+=v;}System.out.printf("Total: %.2f%n",total);}}

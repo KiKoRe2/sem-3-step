@@ -1,0 +1,2 @@
+// Solution for: Electricity Connection Billing
+import java.util.*; public class W91_q4 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();double u=s.nextDouble(),b;if(t.equals("HOME"))b=5*Math.min(100,u)+7*Math.max(0,u-100);else if(t.equals("SHOP"))b=8*u+100;else b=Math.max(1000,6*u);System.out.printf("%s: %.2f%n",t,b);total+=b;}System.out.printf("Total: %.2f%n",total);}}

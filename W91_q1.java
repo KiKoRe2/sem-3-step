@@ -1,0 +1,2 @@
+// Solution for: Garden Plot Area Report
+import java.util.*; public class W91_q1 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase(),owner=s.next();double area;if(t.equals("CIRCLE")){double r=s.nextDouble();area=Math.PI*r*r;}else if(t.equals("RECTANGLE"))area=s.nextDouble()*s.nextDouble();else area=.5*s.nextDouble()*s.nextDouble();System.out.printf("%s (%s): %.2f%n",owner,t,area);total+=area;}System.out.printf("Total Area: %.2f%n",total);}}

@@ -1,0 +1,2 @@
+// Solution for: Weekly Staff Pay
+import java.util.*; public class W91_q2 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase(),name=s.next();double pay;if(t.equals("FULLTIME"))pay=s.nextDouble();else if(t.equals("HOURLY")){double h=s.nextDouble(),r=s.nextDouble();pay=Math.min(h,40)*r+Math.max(0,h-40)*r*1.5;}else pay=s.nextDouble();System.out.printf("%s: %.2f%n",name,pay);total+=pay;}System.out.printf("Total Payroll: %.2f%n",total);}}

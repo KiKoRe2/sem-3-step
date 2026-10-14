@@ -1,0 +1,2 @@
+// Solution for: College Fee Counter
+import java.util.*; public class W92_q3 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase(),name=s.next();double fee=t.equals("DAY_SCHOLAR")?40000:t.equals("HOSTELLER")?100000:20000;if(!t.equals("HOSTELLER"))fee+=12000;System.out.printf("%s: %.2f%n",name,fee);total+=fee;}System.out.printf("Total Collected: %.2f%n",total);}}

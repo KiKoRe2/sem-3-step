@@ -1,0 +1,2 @@
+// Solution for: Quiz Scorecard
+import java.util.*; public class W71_q2 {static class Scorecard{private final List<Boolean> answers=new ArrayList<>();void record(boolean correct){answers.add(correct);}int score(){int n=0;for(boolean b:answers)if(b)n++;return n;}}public static void main(String[]z){Scorecard s=new Scorecard();s.record(true);s.record(false);s.record(true);System.out.println("Score: "+s.score());}}

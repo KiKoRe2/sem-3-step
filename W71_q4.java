@@ -1,0 +1,2 @@
+// Solution for: Locker Code
+public class W71_q4 {static class Locker{private String code;Locker(String c){code=c;}void changeCode(String old,String next){if(code.equals(old)&&next!=null&&!next.isEmpty())code=next;}boolean unlock(String attempt){return code.equals(attempt);}}public static void main(String[]z){Locker l=new Locker("1234");l.changeCode("1234","5678");System.out.println(l.unlock("5678"));}}

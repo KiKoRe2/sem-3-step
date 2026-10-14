@@ -1,0 +1,2 @@
+// Solution for: Attendance Sheet
+import java.util.*; public class W71_q5 {static class AttendanceSheet{private Set<String> present=new HashSet<>();void markPresent(String n){present.add(n);}boolean isPresent(String n){return present.contains(n);}int count(){return present.size();}}public static void main(String[]z){AttendanceSheet a=new AttendanceSheet();a.markPresent("Asha");a.markPresent("Ravi");System.out.println("Present: "+a.count());System.out.println("Asha present: "+a.isPresent("Asha"));}}

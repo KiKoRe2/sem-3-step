@@ -1,0 +1,2 @@
+// Solution for: Password Checker
+public class W72_q3 {static class PasswordChecker{private final String rating;PasswordChecker(String p){int score=0;if(p.length()>=8)score++;if(p.matches(".*[A-Z].*"))score++;if(p.matches(".*[a-z].*"))score++;if(p.matches(".*\\d.*"))score++;if(p.matches(".*[^A-Za-z0-9].*"))score++;rating=score>=4?"Strong":score>=3?"Medium":"Weak";}String getRating(){return rating;}}public static void main(String[]z){System.out.println(new PasswordChecker("GoodPass123!").getRating());}}

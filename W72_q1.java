@@ -1,0 +1,2 @@
+// Solution for: Health Bar
+public class W72_q1 {static class CharacterUnit{private int health;private final int maxHealth;CharacterUnit(int m){maxHealth=m;health=m;}void takeDamage(int n){health=Math.max(0,health-n);}void heal(int n){health=Math.min(maxHealth,health+n);}int getHealth(){return health;}}public static void main(String[]z){CharacterUnit c=new CharacterUnit(100);c.takeDamage(30);System.out.println(c.getHealth());c.heal(50);System.out.println(c.getHealth());c.takeDamage(150);System.out.println(c.getHealth());}}

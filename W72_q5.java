@@ -1,0 +1,2 @@
+// Solution for: Shopping Cart
+import java.util.*; public class W72_q5 {static class Cart{private List<Double> prices=new ArrayList<>();void add(double p){if(p>=0)prices.add(p);}int itemCount(){return prices.size();}double total(){double s=0;for(double p:prices)s+=p;return s;}}public static void main(String[]z){Cart c=new Cart();c.add(20);c.add(35.5);System.out.printf("Items: %d Total: %.2f%n",c.itemCount(),c.total());}}

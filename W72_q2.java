@@ -1,0 +1,2 @@
+// Solution for: Playlist
+import java.util.*; public class W72_q2 {static class Playlist{private final List<String> songs=new ArrayList<>();void addSong(String s){songs.add(s);}List<String> getSongs(){return new ArrayList<>(songs);}}public static void main(String[]z){Playlist p=new Playlist();p.addSong("Song A");p.addSong("Song B");List<String> copy=p.getSongs();copy.clear();System.out.println(p.getSongs());}}

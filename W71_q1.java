@@ -1,0 +1,2 @@
+// Solution for: Piggy Bank
+public class W71_q1 {static class PiggyBank{private final String id;private int savings;PiggyBank(String id){this.id=id;}void deposit(int n){if(n>0)savings+=n;}boolean withdraw(int n){if(n<=savings&&n>0){savings-=n;return true;}return false;}int getSavings(){return savings;}String getId(){return id;}}public static void main(String[]z){PiggyBank p=new PiggyBank("PB-1");p.deposit(100);p.withdraw(30);p.withdraw(500);System.out.println(p.getId()+" savings="+p.getSavings());}}

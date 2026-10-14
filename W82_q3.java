@@ -1,0 +1,2 @@
+// Solution for: Hostel Electricity Bill
+import java.util.*; public class W82_q3 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();double units=s.nextDouble(),bill;if(t.equals("SINGLE"))bill=8*units;else if(t.equals("SHARED")){int occupants=s.nextInt();bill=6*units/occupants;}else bill=12*units;System.out.printf("%s: %.2f%n",t,bill);total+=bill;}System.out.printf("Total: %.2f%n",total);}}

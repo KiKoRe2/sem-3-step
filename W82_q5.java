@@ -1,0 +1,2 @@
+// Solution for: Streaming Plan Renewal Reminder
+import java.util.*;import java.time.*; public class W82_q5 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();for(int i=0;i<n;i++){String t=s.next().toUpperCase(),name=s.next();LocalDate d=LocalDate.parse(s.next());int days=t.equals("BASIC")?30:t.equals("STANDARD")?90:365;System.out.println(name+": "+d.plusDays(days));}}}

@@ -1,0 +1,2 @@
+// Solution for: Delivery Fee Calculator
+import java.util.*; public class W81_q3 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();double kg=s.nextDouble(),km=s.nextDouble(),fee=0;if(t.equals("STANDARD"))fee=5+.5*kg+.1*km;else if(t.equals("EXPRESS"))fee=15+kg+.2*km;else if(t.equals("INTERNATIONAL")){double customs=s.nextDouble();fee=25+2*kg+.5*km+customs;}System.out.printf("%s: %.2f%n",t,fee);total+=fee;}System.out.printf("Total: %.2f%n",total);}}

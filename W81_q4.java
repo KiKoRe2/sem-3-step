@@ -1,0 +1,2 @@
+// Solution for: Examination Question Grader
+import java.util.*; public class W81_q4 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String type=s.next().toUpperCase();String correct=s.next();String answer=s.next();double score;if(type.equals("MCQ")||type.equals("TRUEFALSE"))score=correct.equalsIgnoreCase(answer)?1:0;else {score=correct.equalsIgnoreCase(answer)?5:0;}System.out.printf("%s: %.2f%n",type,score);total+=score;}System.out.printf("Total: %.2f%n",total);}}

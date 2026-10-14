@@ -1,0 +1,2 @@
+// Solution for: Canteen Billing Counter
+import java.util.*; public class W82_q1 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();double a=s.nextDouble(),v;if(t.equals("STUDENT"))v=a*.9;else if(t.equals("STAFF"))v=a*.95;else v=a+10;System.out.printf("%s: %.2f%n",t,v);total+=v;}System.out.printf("Total: %.2f%n",total);}}

@@ -1,0 +1,2 @@
+// Solution for: Public Transport Fare Calculator
+import java.util.*; public class W81_q5 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();double d=s.nextDouble(),fare;if(t.equals("BUS"))fare=5+2*d;else if(t.equals("TRAIN"))fare=10+1.5*d;else fare=20+3*d;System.out.printf("%s: %.2f%n",t,fare);total+=fare;}System.out.printf("Total: %.2f%n",total);}}

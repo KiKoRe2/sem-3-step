@@ -1,0 +1,2 @@
+// Solution for: Payment System Fee Calculation
+import java.util.*; public class W81_q1 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();double a=s.nextDouble(),v=a;if(t.equals("CARD"))v=a*1.02;else if(t.equals("WALLET"))v=a*1.01;System.out.printf("%s: %.2f%n",t,v);total+=v;}System.out.printf("Total: %.2f%n",total);}}

@@ -1,0 +1,2 @@
+// Solution for: Festival Bonus Calculator
+import java.util.*; public class W82_q4 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();double salary=s.nextDouble(),bonus=t.equals("FULLTIME")?salary*.10:t.equals("PARTTIME")?salary*.05:2000;System.out.printf("%s: %.2f%n",t,bonus);total+=bonus;}System.out.printf("Total Bonus: %.2f%n",total);}}

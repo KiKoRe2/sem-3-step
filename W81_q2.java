@@ -1,0 +1,2 @@
+// Solution for: Library Item Due Date Calculator
+import java.util.*;import java.time.*; public class W81_q2 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=Integer.parseInt(s.nextLine().trim());for(int i=0;i<n;i++){String line=s.nextLine().trim();String[] p=line.split("\\s+",2);String type=p[0].toUpperCase();String title=p.length>1?p[1]:"Item";int days=type.equals("BOOK")?14:type.equals("DVD")?7:3;System.out.println(title+": "+LocalDate.now().plusDays(days));}}}

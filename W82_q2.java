@@ -1,0 +1,2 @@
+// Solution for: Campus Parking Charge Calculator
+import java.util.*; public class W82_q2 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();double total=0;for(int i=0;i<n;i++){String t=s.next().toUpperCase();int h=s.nextInt();double v;if(t.equals("BIKE"))v=10*h;else if(t.equals("CAR"))v=h==1?30:30+20*(h-1);else v=Math.max(100,50*h);System.out.printf("%s: %.2f%n",t,v);total+=v;}System.out.printf("Total: %.2f%n",total);}}

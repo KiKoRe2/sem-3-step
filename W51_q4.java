@@ -1,0 +1,2 @@
+// Solution for: Hackathon Seating Grid Optimizer
+import java.util.*; public class W51_q4 {static String classifyRows(int[][] a,int t){StringBuilder b=new StringBuilder();for(int i=0;i<a.length;i++){double sum=0;for(int x:a[i])sum+=x;double avg=sum/a[i].length;b.append("Row ").append(i+1).append(": ").append(avg>=t?"Doing well":"Needs help").append(" (").append(String.format("%.2f",avg)).append(")\\n");}return b.toString();}public static void main(String[]z){int[][] a={{80,90,85},{40,50,45}};System.out.print(classifyRows(a,70));}}

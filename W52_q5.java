@@ -1,0 +1,2 @@
+// Solution for: Fantasy League Auto-Draft Ranking Engine
+import java.util.*; public class W52_q5 {static class Player implements Comparable<Player>{String name;int points;Player(String n,int p){name=n;points=p;}public int compareTo(Player p){return Integer.compare(p.points,points);}public String toString(){return name+": "+points;}}public static void main(String[]z){Player[] p={new Player("Asha",80),new Player("Ravi",95),new Player("Neha",88)};Arrays.sort(p);for(Player x:p)System.out.println(x);}}

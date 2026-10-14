@@ -1,0 +1,2 @@
+// Solution for: Top-3 Podium Finder
+import java.util.*; public class W51_q3 {public static void main(String[]z){int[] s={90,90,82,79,70};int first=Integer.MIN_VALUE,second=Integer.MIN_VALUE,third=Integer.MIN_VALUE;for(int x:s){if(x>first){third=second;second=first;first=x;}else if(x>second){third=second;second=x;}else if(x>third)third=x;}System.out.println("Top scores: "+first+", "+second+", "+third);}}

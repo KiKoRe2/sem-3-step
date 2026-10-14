@@ -1,0 +1,2 @@
+// Solution for: Two Sum
+import java.util.*; public class W41_q1 {static int[] twoSum(int[] n,int t){for(int i=0;i<n.length;i++)for(int j=i+1;j<n.length;j++)if(n[i]+n[j]==t)return new int[]{i,j};return new int[0];}public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();int t=s.nextInt();System.out.println(Arrays.toString(twoSum(a,t)));}}

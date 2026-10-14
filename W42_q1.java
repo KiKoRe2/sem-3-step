@@ -1,0 +1,2 @@
+// Solution for: Product of Array Except Self
+import java.util.*; public class W42_q1 {static int[] productExceptSelf(int[] a){int n=a.length;int[] r=new int[n];int p=1;for(int i=0;i<n;i++){r[i]=p;p*=a[i];}p=1;for(int i=n-1;i>=0;i--){r[i]*=p;p*=a[i];}return r;}public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();System.out.println(Arrays.toString(productExceptSelf(a)));}}

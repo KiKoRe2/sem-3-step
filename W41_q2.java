@@ -1,0 +1,2 @@
+// Solution for: Best Time to Buy and Sell Stock
+import java.util.*; public class W41_q2 {static int maxProfit(int[] p){int min=Integer.MAX_VALUE,best=0;for(int x:p){min=Math.min(min,x);best=Math.max(best,x-min);}return best;}public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();System.out.println(maxProfit(a));}}

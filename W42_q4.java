@@ -1,0 +1,2 @@
+// Solution for: Subarray Sum Equals K
+import java.util.*; public class W42_q4 {static int subarraySum(int[] a,int k){Map<Integer,Integer> m=new HashMap<>();m.put(0,1);int sum=0,count=0;for(int x:a){sum+=x;count+=m.getOrDefault(sum-k,0);m.put(sum,m.getOrDefault(sum,0)+1);}return count;}public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();int k=s.nextInt();System.out.println(subarraySum(a,k));}}

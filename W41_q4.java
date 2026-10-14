@@ -1,0 +1,2 @@
+// Solution for: Merge Sorted Arrays
+import java.util.*; public class W41_q4 {public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt(),m=s.nextInt();int[] a=new int[n],b=new int[m],c=new int[n+m];for(int i=0;i<n;i++)a[i]=s.nextInt();for(int i=0;i<m;i++)b[i]=s.nextInt();int i=0,j=0,k=0;while(i<n&&j<m)c[k++]=a[i]<=b[j]?a[i++]:b[j++];while(i<n)c[k++]=a[i++];while(j<m)c[k++]=b[j++];System.out.println(Arrays.toString(c));}}

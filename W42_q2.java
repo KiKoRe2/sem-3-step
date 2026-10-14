@@ -1,0 +1,2 @@
+// Solution for: Maximum Subarray
+import java.util.*; public class W42_q2 {static int maxSubArray(int[] a){int cur=a[0],best=a[0];for(int i=1;i<a.length;i++){cur=Math.max(a[i],cur+a[i]);best=Math.max(best,cur);}return best;}public static void main(String[]z){Scanner s=new Scanner(System.in);int n=s.nextInt();int[] a=new int[n];for(int i=0;i<n;i++)a[i]=s.nextInt();System.out.println(maxSubArray(a));}}
